@@ -1,6 +1,10 @@
 # Droidmon - Dalvik Monitoring Framework for CuckooDroid
 Contributed By Check Point Software Technologies LTD.
 
+Differences with the Original Droidmon
+----------
+We add *Targeted Logging* and *Method Name Encoding* features to Droidmon. For details and experiments on both of these features, see [their documentation](doc/doc.pdf). Both features are enabled by default and we currently do not have any interface to disable them without changing the source code. To specify the list of applications to monitor, write it to a configuration file following the example in [`monitoredApp.txt`](monitoredApp.txt) and push the file to `/data/local/tmp/monitoredApp.txt`.
+
 Background
 ----------
 Droidmon, a key piece in CuckooDroid, monitors applications inside a virtual (guest) machine and provides insight into an application’s behavior. Droidmon is an open source Dalvik Monitoring framework based on [Xposed Framework](http://repo.xposed.info/).
